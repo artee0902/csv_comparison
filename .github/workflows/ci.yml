@@ -30,15 +30,21 @@ jobs:
         run: |
           pytest --alluredir=allure-results
 
-      - name: Generate Allure Report
+      - name: Generate Allure HTML Report
         uses: simple-elf/allure-report-action@v1.7
         with:
           allure_results: allure-results
           report_path: allure-report
           allure_report: true
 
-      - name: Upload Allure Report Artifact
+      - name: Upload Allure HTML Report Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: allure-report
+          name: allure-html-report
           path: allure-report
+
+      - name: Upload Raw Allure Results Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: allure-raw-results
+          path: allure-results
