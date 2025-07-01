@@ -8,7 +8,6 @@ on:
     branches:
       - main
 
-
 jobs:
   test:
     name: Run CSV Export & Comparison Tests
@@ -26,7 +25,7 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install pytest allure-pytest
+          pip install -r requirements.txt
 
       - name: Run pytest and generate Allure results
         run: |
@@ -37,7 +36,7 @@ jobs:
         with:
           allure_results: allure-results
           report_path: allure-report
-          allure_report: true
+          allure_report: allure-report
 
       - name: Upload Allure Report Artifact
         uses: actions/upload-artifact@v3
