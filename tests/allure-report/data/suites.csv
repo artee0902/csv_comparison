@@ -1,0 +1,4 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"Validate that both exported CSV files have matching data rows","3","Step 3: Compare file1.csv with file2.csv","","Tue Jul 01 15:11:26 IST 2025","failed","Tue Jul 01 15:11:26 IST 2025","","test_export_csv","",""
+"","3","Step 1: Export file1.csv with 5 rows","","Tue Jul 01 15:11:26 IST 2025","passed","Tue Jul 01 15:11:26 IST 2025","","test_export_csv","",""
+"","3","Step 2: Export file2.csv with 3 rows","","Tue Jul 01 15:11:26 IST 2025","passed","Tue Jul 01 15:11:26 IST 2025","","test_export_csv","",""
