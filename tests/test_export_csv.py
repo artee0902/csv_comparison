@@ -42,7 +42,7 @@ def compare_csvs(file1, file2):
 
     assert not diff_rows, "CSVs differ"
 
-# ------------------- TESTS ------------------------
+# ------------------- TEST CASES------------------------
 
 @allure.title("Step 1: Export file1.csv with 5 rows")
 @allure.feature("CSV Export")
@@ -52,8 +52,8 @@ def test_export_csv_file1():
         {"ID": "1", "Name": "Apple", "Price": "100"},
         {"ID": "2", "Name": "Banana", "Price": "40"},
         {"ID": "3", "Name": "Cherry", "Price": "60"},
-        {"ID": "4", "Name": "Date", "Price": "80"},
-        {"ID": "5", "Name": "Elderberry", "Price": "120"},
+        {"ID": "4", "Name": "Mango", "Price": "80"},
+        {"ID": "5", "Name": "Strawberry", "Price": "120"},
     ]
     create_csv("file1.csv", rows)
 
